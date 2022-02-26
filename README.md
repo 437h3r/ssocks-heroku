@@ -1,3 +1,2 @@
-## Shadowsocks+V2Ray-plugin
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)]()
+## Shadowsocks+V2Ray on Heroku
+(https://www.herokucdn.com/deploy/button.png)
