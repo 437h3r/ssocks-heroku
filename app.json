@@ -4,26 +4,26 @@
   "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
   "env": {
      "ENCRYPT": {
-      "description": "Shadowsocks encryption method.",
+      "description": "Метод шифрования Shadowsocks.",
       "value": "chacha20-ietf-poly1305"
     },
      "PASSWORD": {
-      "description": "The password of shadowsocks, you can use uuid as the password (http://www.uuid.online/ online generation)",
-      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+      "description": "Пароль для сервера Shadowsocks, что-то вроде 5c301bb84ba11bbab084, а не Пароль)) Если заданно AppName запоминать его не нужно.",
+      "value": ""
     },
 
      "V2_Path": {
-      "description": "V2Ray handler path. Auto-generated with some secret value.",
+      "description": "Путь обработчика V2ray. Автоматически генерируется с значением secret",
       "generator": "secret"
     },
 
      "AppName": {
-      "description": "App Name filled in at the top (or even full domain if there is a custom one) to generate the configuration and QR code. If you don’t want to generate it, enter no",
+      "description": "Имя приложения, заполненное вверху (App-name), чтобы сгенерировать конфигурацию и QR-код. Если вы не хотите его генерировать, введите no",
       "value": "no"
     },
 
     "QR_Path": {
-       "description": "QR code and configuration link path, the default qr_img, you can also use uuid for confidentiality, but it cannot be the same as V2_Path. If the AppName variable is no, this variable has no effect",
+       "description": "Ссылка на QR-код конфигурации. Придумайте достаточно уникальный секретный адрес из случайных букв и цифр. Слеш обязательно должен быть в начале строки. Если переменная AppName имеет значение no, эта переменная неважна",
        "value": "/qr"
      }
   },
